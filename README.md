@@ -4,8 +4,8 @@
 
 - [PLAN, CODE, BUILD] Flask, HTML, SQLAlchemy
 - [TEST] Pytest
-- [BUILD] Push to git, !Link repo with ssh
-- [RELEASE] CI CD with github actions,
+- [BUILD] Push to git, Link repo with ssh
+- [RELEASE] CI/CD with Github Actions,
 - [DEPLOY] Dockerise app
 - [OPERATE] Manage containers with Kubernetes
 - [TEST] Automated testing with selenium
