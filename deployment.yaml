@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstpod
+  labels:
+    app: flask
+spec:
+  template:
+    metadata:
+      name: myfirstpod
+      labels:
+        app: flask
+    spec:
+      containers:
+        - name: myfirstpod
+          image: fforfrodo/devopswithpy:latest
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
+  replicas: 4
+  selector:
+    matchLabels:
+      app: flask
